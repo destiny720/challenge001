@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 40rem;
+    height: 26rem;
+    margin: 10rem auto;
+    box-shadow: 0 0  1rem #f4f4f4;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+}
+.left{
+    width: 22rem;
+    height: 26rem;
+    background: linear-gradient(to top,hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 2rem;
+    margin-right: 2px;
+    text-align: center; 
+}
+.left h3{
+    color: #b1a3ff;
+    padding-top: 1rem;
+}
+.left h2{
+    color: hsl(0, 0%, 100%);
+}
+.left p{
+    color: #b1a3ff;
+    padding: 0 4rem;
+}
+.num{
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(180deg,hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 0 auto;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    position: relative;
+}
+.desc{
+    position: absolute;
+}
+.desc h1{
+    margin: 2rem;
+    font-size: 4rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.desc p{
+    margin-top: -2rem;
+    white-space: nowrap;
+}
+.right{
+    width: 22rem;
+    height: 26rem;
+    border-radius: 2rem;
+    margin-left: 2px;
+}
+.right-container{
+    margin: 2rem;
+}
+.list-item{
+    display: flex;
+    flex-direction: column;
+}
+.right-container h2{
+    margin-left: 0.2rem;
+}
+.item1, .item2, .item3, .item4{
+    display: flex;
+    border: 1px solid #f4f4f4f4;
+    padding: .9rem;
+    margin: 0.3rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+    word-spacing: .3rem;
+}
+button{
+    padding: .9rem;
+    width: 96%;
+    margin: 1.1rem 0.33rem;
+    border-radius: 1rem;
+    border: none;
+    background: #303b59;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.item1{
+    color: hsl(0, 100%, 67%);
+    background: hsla(0, 100%, 67%, 0.027);
+}
+.item2{
+    color: hsl(39, 100%, 56%);
+    background: hsl(39, 100%, 56%, 0.027);
+}
+.item3{
+    color: hsl(166, 100%, 37%);
+    background: hsl(166, 100%, 37%, 0.027);
+}
+.item4{
+    color: hsl(234, 85%, 45%);
+    background: hsl(234, 85%, 45%,0.027);
+}
+.list1{
+    color: #000;
+}
+label{
+    color: #919191;
+}
+
+
+@media screen and (max-width:375px) {
+    .container{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        margin-top:0 ;
+    }
+    .left{
+        width: 83%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+}
